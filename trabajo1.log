@@ -1,0 +1,1811 @@
+﻿-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  Ejercicio práctico.smcl
+  log type:  smcl
+ opened on:  13 Aug 2017, 09:36:30
+
+. 
+. import delimited "Base2.csv", encoding(ISO-8859-1)clear
+(7 vars, 140 obs)
+
+. *(7 variables, 163 observations pasted into data editor)
+
+. codebook var1
+
+-------------------------------------------------------------------------------
+var1                                                                (unlabeled)
+-------------------------------------------------------------------------------
+
+                  type:  numeric (int)
+
+                 range:  [1489,10076]                 units:  1
+         unique values:  303                      missing .:  0/303
+
+                  mean:   8328.65
+              std. dev:   1649.49
+
+           percentiles:        10%       25%       50%       75%       90%
+                              6559      6987      8601      9894      9986
+
+. table var1
+
+----------------------
+     var1 |      Freq.
+----------+-----------
+     1489 |          1
+     1878 |          1
+     1884 |          1
+     1886 |          1
+     1890 |          1
+     1896 |          1
+     4902 |          1
+     4908 |          1
+     4914 |          1
+     4920 |          1
+     4926 |          1
+     5552 |          1
+     5553 |          1
+     5554 |          1
+     5555 |          1
+     5556 |          1
+     5557 |          1
+     5558 |          1
+     5559 |          1
+     5560 |          1
+     6549 |          1
+     6550 |          1
+     6551 |          1
+     6552 |          1
+     6553 |          1
+     6554 |          1
+     6555 |          1
+     6556 |          1
+     6557 |          1
+     6558 |          1
+     6559 |          1
+     6560 |          1
+     6561 |          1
+     6562 |          1
+     6572 |          1
+     6584 |          1
+     6596 |          1
+     6608 |          1
+     6620 |          1
+     6632 |          1
+     6644 |          1
+     6656 |          1
+     6668 |          1
+     6680 |          1
+     6692 |          1
+     6704 |          1
+     6716 |          1
+     6728 |          1
+     6740 |          1
+     6752 |          1
+     6764 |          1
+     6776 |          1
+     6788 |          1
+     6800 |          1
+     6812 |          1
+     6824 |          1
+     6836 |          1
+     6848 |          1
+     6860 |          1
+     6872 |          1
+     6884 |          1
+     6896 |          1
+     6908 |          1
+     6920 |          1
+     6932 |          1
+     6944 |          1
+     6956 |          1
+     6968 |          1
+     6980 |          1
+     6981 |          1
+     6982 |          1
+     6983 |          1
+     6984 |          1
+     6985 |          1
+     6986 |          1
+     6987 |          1
+     6988 |          1
+     6989 |          1
+     6990 |          1
+     6991 |          1
+     6992 |          1
+     7033 |          1
+     7085 |          1
+     7137 |          1
+     7189 |          1
+     7241 |          1
+     7293 |          1
+     7345 |          1
+     7397 |          1
+     7449 |          1
+     7501 |          1
+     7553 |          1
+     7605 |          1
+     7657 |          1
+     7709 |          1
+     7761 |          1
+     7813 |          1
+     7865 |          1
+     7917 |          1
+     7969 |          1
+     8021 |          1
+     8073 |          1
+     8125 |          1
+     8177 |          1
+     8229 |          1
+     8281 |          1
+     8333 |          1
+     8385 |          1
+     8437 |          1
+     8445 |          1
+     8449 |          1
+     8453 |          1
+     8456 |          1
+     8457 |          1
+     8461 |          1
+     8465 |          1
+     8467 |          1
+     8469 |          1
+     8473 |          1
+     8477 |          1
+     8478 |          1
+     8481 |          1
+     8485 |          1
+     8489 |          1
+     8493 |          1
+     8497 |          1
+     8501 |          1
+     8505 |          1
+     8509 |          1
+     8513 |          1
+     8517 |          1
+     8521 |          1
+     8525 |          1
+     8529 |          1
+     8533 |          1
+     8537 |          1
+     8541 |          1
+     8545 |          1
+     8549 |          1
+     8553 |          1
+     8557 |          1
+     8561 |          1
+     8565 |          1
+     8569 |          1
+     8573 |          1
+     8577 |          1
+     8581 |          1
+     8585 |          1
+     8589 |          1
+     8593 |          1
+     8597 |          1
+     8601 |          1
+     8605 |          1
+     8609 |          1
+     8613 |          1
+     8617 |          1
+     8621 |          1
+     8625 |          1
+     8629 |          1
+     8633 |          1
+     8637 |          1
+     8641 |          1
+     8645 |          1
+     8649 |          1
+     8653 |          1
+     8657 |          1
+     8661 |          1
+     8665 |          1
+     8666 |          1
+     8667 |          1
+     8668 |          1
+     8669 |          1
+     8670 |          1
+     8671 |          1
+     8672 |          1
+     8673 |          1
+     8674 |          1
+     8675 |          1
+     8676 |          1
+     8677 |          1
+     8678 |          1
+     8679 |          1
+     8680 |          1
+     8681 |          1
+     8682 |          1
+     8725 |          1
+     8768 |          1
+     8811 |          1
+     8854 |          1
+     8897 |          1
+     8940 |          1
+     8983 |          1
+     9026 |          1
+     9069 |          1
+     9112 |          1
+     9155 |          1
+     9198 |          1
+     9241 |          1
+     9284 |          1
+     9327 |          1
+     9370 |          1
+     9413 |          1
+     9456 |          1
+     9499 |          1
+     9542 |          1
+     9585 |          1
+     9628 |          1
+     9671 |          1
+     9714 |          1
+     9757 |          1
+     9800 |          1
+     9843 |          1
+     9872 |          1
+     9874 |          1
+     9875 |          1
+     9876 |          1
+     9878 |          1
+     9880 |          1
+     9881 |          1
+     9882 |          1
+     9884 |          1
+     9886 |          1
+     9887 |          1
+     9888 |          1
+     9890 |          1
+     9892 |          1
+     9893 |          1
+     9894 |          1
+     9896 |          1
+     9898 |          1
+     9899 |          1
+     9900 |          1
+     9902 |          1
+     9904 |          1
+     9905 |          1
+     9906 |          1
+     9908 |          1
+     9910 |          1
+     9911 |          1
+     9912 |          1
+     9914 |          1
+     9916 |          1
+     9917 |          1
+     9918 |          1
+     9920 |          1
+     9922 |          1
+     9923 |          1
+     9924 |          1
+     9926 |          1
+     9928 |          1
+     9929 |          1
+     9930 |          1
+     9932 |          1
+     9934 |          1
+     9936 |          1
+     9938 |          1
+     9940 |          1
+     9942 |          1
+     9944 |          1
+     9947 |          1
+     9950 |          1
+     9953 |          1
+     9956 |          1
+     9959 |          1
+     9962 |          1
+     9965 |          1
+     9968 |          1
+     9971 |          1
+     9974 |          1
+     9977 |          1
+     9980 |          1
+     9983 |          1
+     9986 |          1
+     9989 |          1
+     9992 |          1
+     9995 |          1
+     9998 |          1
+    10001 |          1
+    10004 |          1
+    10007 |          1
+    10010 |          1
+    10013 |          1
+    10016 |          1
+    10019 |          1
+    10022 |          1
+    10025 |          1
+    10028 |          1
+    10031 |          1
+    10034 |          1
+    10037 |          1
+    10040 |          1
+    10043 |          1
+    10046 |          1
+    10049 |          1
+    10052 |          1
+    10055 |          1
+    10058 |          1
+    10061 |          1
+    10064 |          1
+    10067 |          1
+    10070 |          1
+    10073 |          1
+    10076 |          1
+----------------------
+
+. merge 1:1 var1 using "Base3 (4).dta"
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                               303  (_merge==3)
+    -----------------------------------------
+
+. drop merge
+variable merge not found
+r(111);
+
+. drop _merge
+
+. format fecha %td
+variable fecha not found
+r(111);
+
+. label variable var1 "Identificacion"
+
+. rename var1 id
+
+. label variable var2 "sexo"
+
+. rename var2 sex
+
+. label variable id "identificacion"
+
+. label variable var3 "tipo de dolor toracio"
+
+. rename var3 tipodolor
+
+. label variable var4 "presion arterial sistolica"
+
+. rename var4 pas
+
+. label variable var5 "colesterol serico"
+
+. rename var5 colesterol
+
+. label variable var6 "electrocardiograma"
+
+. rename var6 ecg
+
+. label variable var7 "fecha nacimiento"
+
+. rename var7 fechanac
+
+. label variable var8 "diagnostico enfermedad cornaria"
+
+. rename var8 dxenfcor
+
+. label variable var9 "fecha angiografia"
+
+. rename var9 fechaang
+
+. codebook sex
+
+-------------------------------------------------------------------------------
+sex                                                                        sexo
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                        missing .:  3/303
+
+            tabulation:  Freq.  Value
+                            97  0
+                           203  1
+                             3  .
+
+. label define hombre 1 "hombre"
+
+. codebook sex
+
+-------------------------------------------------------------------------------
+sex                                                                        sexo
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                        missing .:  3/303
+
+            tabulation:  Freq.  Value
+                            97  0
+                           203  1
+                             3  .
+
+. label define hombre 1 "hombre" 0 "mujer", replace
+
+. label values sex hombre
+
+. label drop _merge
+
+. label define sex 1 "hombre" 0 "mujer"
+
+. codebook sex
+
+-------------------------------------------------------------------------------
+sex                                                                        sexo
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  hombre
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                        missing .:  3/303
+
+            tabulation:  Freq.   Numeric  Label
+                            97         0  mujer
+                           203         1  hombre
+                             3         .  
+
+. label define tipodolor 1 "angina tipica" 2 "angina atipica" 3 "dolor no angin
+> oso" 4 "asintomatico"
+
+. codebook tipodolor
+
+-------------------------------------------------------------------------------
+tipodolor                                                 tipo de dolor toracio
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+
+                 range:  [1,4]                        units:  1
+         unique values:  4                        missing .:  3/303
+
+            tabulation:  Freq.  Value
+                            23  1
+                            50  2
+                            85  3
+                           142  4
+                             3  .
+
+. label define tipodolor 1 "angina tipicaa" 2 "angina atipica" 3 "dolor no angi
+> noso" 4 "asintomatico", replace
+
+. codebook sex
+
+-------------------------------------------------------------------------------
+sex                                                                        sexo
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  hombre
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                        missing .:  3/303
+
+            tabulation:  Freq.   Numeric  Label
+                            97         0  mujer
+                           203         1  hombre
+                             3         .  
+
+. codebook tipodolor
+
+-------------------------------------------------------------------------------
+tipodolor                                                 tipo de dolor toracio
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+
+                 range:  [1,4]                        units:  1
+         unique values:  4                        missing .:  3/303
+
+            tabulation:  Freq.  Value
+                            23  1
+                            50  2
+                            85  3
+                           142  4
+                             3  .
+
+. label variable tipodolor "tipo de dolor toracico"
+
+. label values tipodolor tipodolor
+
+. codebook tipodolor
+
+-------------------------------------------------------------------------------
+tipodolor                                                tipo de dolor toracico
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  tipodolor
+
+                 range:  [1,4]                        units:  1
+         unique values:  4                        missing .:  3/303
+
+            tabulation:  Freq.   Numeric  Label
+                            23         1  angina tipicaa
+                            50         2  angina atipica
+                            85         3  dolor no anginoso
+                           142         4  asintomatico
+                             3         .  
+
+. label define tipodolor 1 "angina tipica" 2 "angina atipica" 3 "dolor no angin
+> oso" 4 "asintomatico", replace
+
+. label values sex sex
+
+. label values ecg hombre
+
+. label drop hombre
+
+. label define electro 0 "normal" 1 "anormalidad del ST-T" 2 "HVI probable o de
+> finitiva"
+
+. label values ecg electro
+
+. codebook ecg
+
+-------------------------------------------------------------------------------
+ecg                                                          electrocardiograma
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  electro
+
+                 range:  [0,2]                        units:  1
+         unique values:  3                        missing .:  0/303
+
+            tabulation:  Freq.   Numeric  Label
+                           151         0  normal
+                             4         1  anormalidad del ST-T
+                           148         2  HVI probable o definitiva
+
+. label define dxenfcor 0 "diametro <50%" 1 "diametro >50%"
+
+. label values dxenfcor dxenfcor
+
+. codebook dxenfcor
+
+-------------------------------------------------------------------------------
+dxenfcor                                        diagnostico enfermedad cornaria
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  dxenfcor
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                        missing .:  5/303
+
+            tabulation:  Freq.   Numeric  Label
+                           161         0  diametro <50%
+                           137         1  diametro >50%
+                             5         .  
+
+. codebook pas
+
+-------------------------------------------------------------------------------
+pas                                                  presion arterial sistolica
+-------------------------------------------------------------------------------
+
+                  type:  string (str3)
+
+         unique values:  52                       missing "":  2/303
+
+              examples:  "120"
+                         "128"
+                         "134"
+                         "145"
+
+. destring pas, generate(pas2)
+pas: contains nonnumeric characters; no generate
+
+. codebook pas2
+variable pas2 not found
+r(111);
+
+. destring pas, generate(pas2)
+pas: contains nonnumeric characters; no generate
+
+. codebook pas
+
+-------------------------------------------------------------------------------
+pas                                                  presion arterial sistolica
+-------------------------------------------------------------------------------
+
+                  type:  string (str3)
+
+         unique values:  52                       missing "":  2/303
+
+              examples:  "120"
+                         "128"
+                         "134"
+                         "145"
+
+. destring pas, generate(pas2) force
+pas: contains nonnumeric characters; pas2 generated as int
+(5 missing values generated)
+
+. codebook pas2
+
+-------------------------------------------------------------------------------
+pas2                                                 presion arterial sistolica
+-------------------------------------------------------------------------------
+
+                  type:  numeric (int)
+
+                 range:  [94,200]                     units:  1
+         unique values:  49                       missing .:  5/303
+
+                  mean:   131.752
+              std. dev:   17.6595
+
+           percentiles:        10%       25%       50%       75%       90%
+                               110       120       130       140       154
+
+. gen pas2cat = .
+(303 missing values generated)
+
+. replace pas2cat =1 if pas2 < 90
+(0 real changes made)
+
+. replace pas2cat =2 if pas2 >=90 & pas2 <=129
+(132 real changes made)
+
+. 
+. replace pas2cat =2 if pas2 >=130 & pas2 <=139
+(69 real changes made)
+
+. replace pas2cat =2 if pas2 >=140 & pas2 <=159
+(71 real changes made)
+
+. replace pas2cat =2 if pas2 >=160 & pas2 <=179
+(21 real changes made)
+
+. replace pas2cat =3 if pas2 >=130 & pas2 <=139
+(69 real changes made)
+
+. replace pas2cat =4 if pas2 >=140 & pas2 <=159
+(71 real changes made)
+
+. replace pas2cat =5 if pas2 >=160 & pas2 <=179
+(21 real changes made)
+
+. eplace pas2cat =6 if pas2 >=180 & pas2 != .
+command eplace is unrecognized
+r(199);
+
+. replace pas2cat =6 if pas2 >=180 & pas2 != .
+(5 real changes made)
+
+. codebook pas2cat
+
+-------------------------------------------------------------------------------
+pas2cat                                                             (unlabeled)
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [2,6]                        units:  1
+         unique values:  5                        missing .:  5/303
+
+            tabulation:  Freq.  Value
+                           132  2
+                            69  3
+                            71  4
+                            21  5
+                             5  6
+                             5  .
+
+. label variable pas2cat "pas categorizada"
+
+. label define pas2cat 1 "hipotension" 2 "normal" 3 "prehipertension" 4 "hta gr
+> ado 1" 5 "hta grado 2" 6 "crisis hipertensiva"
+
+. label values pas2cat pas2cat
+
+. codebook pas2cat
+
+-------------------------------------------------------------------------------
+pas2cat                                                        pas categorizada
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+                 label:  pas2cat
+
+                 range:  [2,6]                        units:  1
+         unique values:  5                        missing .:  5/303
+
+            tabulation:  Freq.   Numeric  Label
+                           132         2  normal
+                            69         3  prehipertension
+                            71         4  hta grado 1
+                            21         5  hta grado 2
+                             5         6  crisis hipertensiva
+                             5         .  
+
+. help dates
+
+. display date("13/09/2017" "DMY")
+invalid syntax
+r(198);
+
+. gen fechanac2 = date(fechanac, "DMY")
+(173 missing values generated)
+
+. delete fechanac2
+command delete is unrecognized
+r(199);
+
+. del fechanac2
+command del is unrecognized
+r(199);
+
+. drop fechanac2
+
+. generate fechanac2 = date(fechanac,"MDY")
+(9 missing values generated)
+
+. drop fechanac2
+
+. generate fechanac2 = date(fechanac,"DMY")
+(173 missing values generated)
+
+. drop fechanac2
+
+. generate fechanac2 = date(fechanac,"MDY")
+(9 missing values generated)
+
+. 
+. format %tdNN/DD/CCYY fechanac2
+
+. generate fechaang2 = date(fechaang,"MDY")
+(187 missing values generated)
+
+. drop fechaang2
+
+. generate fechaang2 = date(fechaang,"DMY")
+(5 missing values generated)
+
+. gen disfecha = fechaang2 - fechanac2
+(14 missing values generated)
+
+. codebook disfecha
+
+-------------------------------------------------------------------------------
+disfecha                                                            (unlabeled)
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [10690,28282]                units:  1
+         unique values:  281                      missing .:  14/303
+
+                  mean:   20001.6
+              std. dev:   3258.97
+
+           percentiles:        10%       25%       50%       75%       90%
+                             15493     17561     20361     22409     24106
+
+. display disfecha
+15680
+
+. gen edadangio = trunc((fechaang2 fechaang2 - fechanac2) / 365.25)
+fechaang2fechaang2 not found
+r(111);
+
+. gen edadangio = trunc((fechaang2 - fechanac2) / 365.25)
+(14 missing values generated)
+
+. label variable edadangio "edad al momento angiografía"
+
+. codebook sex edad
+
+-------------------------------------------------------------------------------
+sex                                                                        sexo
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  sex
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                        missing .:  3/303
+
+            tabulation:  Freq.   Numeric  Label
+                            97         0  mujer
+                           203         1  hombre
+                             3         .  
+
+-------------------------------------------------------------------------------
+edadangio                                           edad al momento angiografía
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [29,77]                      units:  1
+         unique values:  42                       missing .:  14/303
+
+                  mean:   54.2318
+              std. dev:   8.90448
+
+           percentiles:        10%       25%       50%       75%       90%
+                                42        48        55        61        65
+
+. gen edadactual = trunc((hoy - fechanac2) / 365.25)
+hoy not found
+r(111);
+
+. gen edadactual = trunc((hoy - fechanac2) / 365.25)
+hoy not found
+r(111);
+
+. gen edadactual = trunc((today - fechanac2) / 365.25)
+today not found
+r(111);
+
+. gen edadangio = trunc((08/13/2017 - fechanac2) / 365.25)
+variable edadangio already defined
+r(110);
+
+. gen edadactual = trunc((08/13/2017 - fechanac2) / 365.25)
+(9 missing values generated)
+
+. drop edadactual
+
+. drop pas
+
+. rename pas2 pas
+
+. codebook pas2cat
+
+-------------------------------------------------------------------------------
+pas2cat                                                        pas categorizada
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+                 label:  pas2cat
+
+                 range:  [2,6]                        units:  1
+         unique values:  5                        missing .:  5/303
+
+            tabulation:  Freq.   Numeric  Label
+                           132         2  normal
+                            69         3  prehipertension
+                            71         4  hta grado 1
+                            21         5  hta grado 2
+                             5         6  crisis hipertensiva
+                             5         .  
+
+. tab pas2cat
+
+   pas categorizada |      Freq.     Percent        Cum.
+--------------------+-----------------------------------
+             normal |        132       44.30       44.30
+    prehipertension |         69       23.15       67.45
+        hta grado 1 |         71       23.83       91.28
+        hta grado 2 |         21        7.05       98.32
+crisis hipertensiva |          5        1.68      100.00
+--------------------+-----------------------------------
+              Total |        298      100.00
+
+. sum edadangio
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+   edadangio |        289    54.23183    8.904483         29         77
+
+. codebook edadangio
+
+-------------------------------------------------------------------------------
+edadangio                                           edad al momento angiografía
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [29,77]                      units:  1
+         unique values:  42                       missing .:  14/303
+
+                  mean:   54.2318
+              std. dev:   8.90448
+
+           percentiles:        10%       25%       50%       75%       90%
+                                42        48        55        61        65
+
+. egen float edadpromedio = mean(edadangio)
+
+. by sex, sort : egen float edadpromedio = mean(edadangio)
+variable edadpromedio already defined
+r(110);
+
+. drop edadpromedio
+
+. by sex, sort : egen float edadpromedio = mean(edadangio)
+
+. browse edadpromedio
+
+. codebook edadpromedio
+
+-------------------------------------------------------------------------------
+edadpromedio                                                        (unlabeled)
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [52.666668,55.032257]        units:  1.000e-06
+         unique values:  3                        missing .:  0/303
+
+            tabulation:  Freq.  Value
+                             3  52.666668
+                           203  53.870468
+                            97  55.032257
+
+. drop edadpromedio
+
+. by sex, sort : egen float edadpromedio = mean(edadangio)
+
+. drop edadpromedio
+
+. by sex, sort : egen float edadpromedio = mean(edadangio)
+
+. brose sex edadangio edadpromedio
+command brose is unrecognized
+r(199);
+
+. browse sex edadangio edadpromedio
+
+. table edadpromedio
+
+----------------------
+edadprome |
+dio       |      Freq.
+----------+-----------
+ 52.66667 |          3
+ 53.87047 |        203
+ 55.03226 |         97
+----------------------
+
+. codebook
+
+-------------------------------------------------------------------------------
+id                                                               identificacion
+-------------------------------------------------------------------------------
+
+                  type:  numeric (int)
+
+                 range:  [1489,10076]                 units:  1
+         unique values:  303                      missing .:  0/303
+
+                  mean:   8328.65
+              std. dev:   1649.49
+
+           percentiles:        10%       25%       50%       75%       90%
+                              6559      6987      8601      9894      9986
+
+-------------------------------------------------------------------------------
+sex                                                                        sexo
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  sex
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                        missing .:  3/303
+
+            tabulation:  Freq.   Numeric  Label
+                            97         0  mujer
+                           203         1  hombre
+                             3         .  
+
+-------------------------------------------------------------------------------
+tipodolor                                                tipo de dolor toracico
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  tipodolor
+
+                 range:  [1,4]                        units:  1
+         unique values:  4                        missing .:  3/303
+
+            tabulation:  Freq.   Numeric  Label
+                            23         1  angina tipica
+                            50         2  angina atipica
+                            85         3  dolor no anginoso
+                           142         4  asintomatico
+                             3         .  
+
+-------------------------------------------------------------------------------
+pas                                                  presion arterial sistolica
+-------------------------------------------------------------------------------
+
+                  type:  numeric (int)
+
+                 range:  [94,200]                     units:  1
+         unique values:  49                       missing .:  5/303
+
+                  mean:   131.752
+              std. dev:   17.6595
+
+           percentiles:        10%       25%       50%       75%       90%
+                               110       120       130       140       154
+
+-------------------------------------------------------------------------------
+colesterol                                                    colesterol serico
+-------------------------------------------------------------------------------
+
+                  type:  string (str3)
+
+         unique values:  152                      missing "":  5/303
+
+              examples:  "203"
+                         "229"
+                         "253"
+                         "283"
+
+-------------------------------------------------------------------------------
+ecg                                                          electrocardiograma
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  electro
+
+                 range:  [0,2]                        units:  1
+         unique values:  3                        missing .:  0/303
+
+            tabulation:  Freq.   Numeric  Label
+                           151         0  normal
+                             4         1  anormalidad del ST-T
+                           148         2  HVI probable o definitiva
+
+-------------------------------------------------------------------------------
+fechanac                                                       fecha nacimiento
+-------------------------------------------------------------------------------
+
+                  type:  string (str10)
+
+         unique values:  291                      missing "":  9/303
+
+              examples:  "03/08/1961"
+                         "05/25/1962"
+                         "08/25/1949"
+                         "10/27/1963"
+
+-------------------------------------------------------------------------------
+dxenfcor                                        diagnostico enfermedad cornaria
+-------------------------------------------------------------------------------
+
+                  type:  numeric (byte)
+                 label:  dxenfcor
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                        missing .:  5/303
+
+            tabulation:  Freq.   Numeric  Label
+                           161         0  diametro <50%
+                           137         1  diametro >50%
+                             5         .  
+
+-------------------------------------------------------------------------------
+fechaang                                                      fecha angiografia
+-------------------------------------------------------------------------------
+
+                  type:  string (str10)
+
+         unique values:  89                       missing "":  5/303
+
+              examples:  "06/09/2016"
+                         "12/10/2016"
+                         "17/10/2016"
+                         "24/09/2016"
+
+-------------------------------------------------------------------------------
+pas2cat                                                        pas categorizada
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+                 label:  pas2cat
+
+                 range:  [2,6]                        units:  1
+         unique values:  5                        missing .:  5/303
+
+            tabulation:  Freq.   Numeric  Label
+                           132         2  normal
+                            69         3  prehipertension
+                            71         4  hta grado 1
+                            21         5  hta grado 2
+                             5         6  crisis hipertensiva
+                             5         .  
+
+-------------------------------------------------------------------------------
+fechanac2                                                           (unlabeled)
+-------------------------------------------------------------------------------
+
+                  type:  numeric daily date (float)
+
+                 range:  [-7526,10008]                units:  1
+       or equivalently:  [25may1939,27may1987]        units:  days
+         unique values:  291                      missing .:  9/303
+
+                  mean:   722.718 = 23dec1961 (+ 17 hours)
+              std. dev:   3247.83
+
+           percentiles:        10%       25%       50%       75%       90%
+                             -3413     -1694     342.5      3226      5209
+                         28aug1950 13may1955 08dec1960 31oct1968 06apr1974
+
+-------------------------------------------------------------------------------
+fechaang2                                                           (unlabeled)
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [20667,20758]                units:  1
+         unique values:  89                       missing .:  5/303
+
+                  mean:   20711.7
+              std. dev:   25.4301
+
+           percentiles:        10%       25%       50%       75%       90%
+                             20677     20691     20711     20734     20747
+
+-------------------------------------------------------------------------------
+disfecha                                                            (unlabeled)
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [10690,28282]                units:  1
+         unique values:  281                      missing .:  14/303
+
+                  mean:   20001.6
+              std. dev:   3258.97
+
+           percentiles:        10%       25%       50%       75%       90%
+                             15493     17561     20361     22409     24106
+
+-------------------------------------------------------------------------------
+edadangio                                           edad al momento angiografía
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [29,77]                      units:  1
+         unique values:  42                       missing .:  14/303
+
+                  mean:   54.2318
+              std. dev:   8.90448
+
+           percentiles:        10%       25%       50%       75%       90%
+                                42        48        55        61        65
+
+-------------------------------------------------------------------------------
+edadpromedio                                                        (unlabeled)
+-------------------------------------------------------------------------------
+
+                  type:  numeric (float)
+
+                 range:  [52.666668,55.032257]        units:  1.000e-06
+         unique values:  3                        missing .:  0/303
+
+            tabulation:  Freq.  Value
+                             3  52.666668
+                           203  53.870468
+                            97  55.032257
+
+. table sex
+
+----------------------
+     sexo |      Freq.
+----------+-----------
+    mujer |         97
+   hombre |        203
+----------------------
+
+. tab edadpromedio
+
+edadpromedi |
+          o |      Freq.     Percent        Cum.
+------------+-----------------------------------
+   52.66667 |          3        0.99        0.99
+   53.87047 |        203       67.00       67.99
+   55.03226 |         97       32.01      100.00
+------------+-----------------------------------
+      Total |        303      100.00
+
+. by edadangio, sort : tabulate sex
+
+-------------------------------------------------------------------------------
+-> edadangio = 29
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     hombre |          1      100.00      100.00
+------------+-----------------------------------
+      Total |          1      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 34
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       50.00       50.00
+     hombre |          1       50.00      100.00
+------------+-----------------------------------
+      Total |          2      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 35
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       33.33       33.33
+     hombre |          2       66.67      100.00
+------------+-----------------------------------
+      Total |          3      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 36
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     hombre |          1      100.00      100.00
+------------+-----------------------------------
+      Total |          1      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 37
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       50.00       50.00
+     hombre |          1       50.00      100.00
+------------+-----------------------------------
+      Total |          2      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 38
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       50.00       50.00
+     hombre |          1       50.00      100.00
+------------+-----------------------------------
+      Total |          2      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 39
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       33.33       33.33
+     hombre |          2       66.67      100.00
+------------+-----------------------------------
+      Total |          3      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 40
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     hombre |          3      100.00      100.00
+------------+-----------------------------------
+      Total |          3      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 41
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          4       50.00       50.00
+     hombre |          4       50.00      100.00
+------------+-----------------------------------
+      Total |          8      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 42
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          3       27.27       27.27
+     hombre |          8       72.73      100.00
+------------+-----------------------------------
+      Total |         11      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 43
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       22.22       22.22
+     hombre |          7       77.78      100.00
+------------+-----------------------------------
+      Total |          9      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 44
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       28.57       28.57
+     hombre |          5       71.43      100.00
+------------+-----------------------------------
+      Total |          7      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 45
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          4       40.00       40.00
+     hombre |          6       60.00      100.00
+------------+-----------------------------------
+      Total |         10      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 46
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       33.33       33.33
+     hombre |          2       66.67      100.00
+------------+-----------------------------------
+      Total |          3      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 47
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     hombre |          6      100.00      100.00
+------------+-----------------------------------
+      Total |          6      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 48
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       20.00       20.00
+     hombre |          4       80.00      100.00
+------------+-----------------------------------
+      Total |          5      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 49
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          4       50.00       50.00
+     hombre |          4       50.00      100.00
+------------+-----------------------------------
+      Total |          8      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 50
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          3       50.00       50.00
+     hombre |          3       50.00      100.00
+------------+-----------------------------------
+      Total |          6      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 51
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       16.67       16.67
+     hombre |         10       83.33      100.00
+------------+-----------------------------------
+      Total |         12      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 52
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       18.18       18.18
+     hombre |          9       81.82      100.00
+------------+-----------------------------------
+      Total |         11      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 53
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       33.33       33.33
+     hombre |          4       66.67      100.00
+------------+-----------------------------------
+      Total |          6      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 54
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          5       33.33       33.33
+     hombre |         10       66.67      100.00
+------------+-----------------------------------
+      Total |         15      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 55
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          4       33.33       33.33
+     hombre |          8       66.67      100.00
+------------+-----------------------------------
+      Total |         12      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 56
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          5       45.45       45.45
+     hombre |          6       54.55      100.00
+------------+-----------------------------------
+      Total |         11      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 57
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          4       22.22       22.22
+     hombre |         14       77.78      100.00
+------------+-----------------------------------
+      Total |         18      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 58
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          4       33.33       33.33
+     hombre |          8       66.67      100.00
+------------+-----------------------------------
+      Total |         12      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 59
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       12.50       12.50
+     hombre |         14       87.50      100.00
+------------+-----------------------------------
+      Total |         16      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 60
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          3       30.00       30.00
+     hombre |          7       70.00      100.00
+------------+-----------------------------------
+      Total |         10      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 61
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       40.00       40.00
+     hombre |          3       60.00      100.00
+------------+-----------------------------------
+      Total |          5      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 62
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          9       60.00       60.00
+     hombre |          6       40.00      100.00
+------------+-----------------------------------
+      Total |         15      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 63
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          4       44.44       44.44
+     hombre |          5       55.56      100.00
+------------+-----------------------------------
+      Total |          9      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 64
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       22.22       22.22
+     hombre |          7       77.78      100.00
+------------+-----------------------------------
+      Total |          9      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 65
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          5       71.43       71.43
+     hombre |          2       28.57      100.00
+------------+-----------------------------------
+      Total |          7      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 66
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          2       22.22       22.22
+     hombre |          7       77.78      100.00
+------------+-----------------------------------
+      Total |          9      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 67
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       25.00       25.00
+     hombre |          3       75.00      100.00
+------------+-----------------------------------
+      Total |          4      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 68
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       25.00       25.00
+     hombre |          3       75.00      100.00
+------------+-----------------------------------
+      Total |          4      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 69
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       20.00       20.00
+     hombre |          4       80.00      100.00
+------------+-----------------------------------
+      Total |          5      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 70
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1       50.00       50.00
+     hombre |          1       50.00      100.00
+------------+-----------------------------------
+      Total |          2      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 71
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1      100.00      100.00
+------------+-----------------------------------
+      Total |          1      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 73
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1      100.00      100.00
+------------+-----------------------------------
+      Total |          1      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 76
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          1      100.00      100.00
+------------+-----------------------------------
+      Total |          1      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = 77
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     hombre |          1      100.00      100.00
+------------+-----------------------------------
+      Total |          1      100.00
+
+-------------------------------------------------------------------------------
+-> edadangio = .
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |          4       28.57       28.57
+     hombre |         10       71.43      100.00
+------------+-----------------------------------
+      Total |         14      100.00
+
+
+. by edadpromedio, sort : tabulate sex
+
+-------------------------------------------------------------------------------
+-> edadpromedio = 52.66667
+no observations
+
+-------------------------------------------------------------------------------
+-> edadpromedio = 53.87047
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+     hombre |        203      100.00      100.00
+------------+-----------------------------------
+      Total |        203      100.00
+
+-------------------------------------------------------------------------------
+-> edadpromedio = 55.03226
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |         97      100.00      100.00
+------------+-----------------------------------
+      Total |         97      100.00
+
+
+. table sex, contents(freq mean edadangio )
+
+------------------------------------------
+     sexo |          Freq.  mean(edadan~o)
+----------+-------------------------------
+    mujer |             97        55.03226
+   hombre |            203        53.87047
+------------------------------------------
+
+. graph bar (sum) sex (mean) edadangio
+
+. graph box edadangio, over(sex)
+
+. tab sex
+
+       sexo |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      mujer |         97       32.33       32.33
+     hombre |        203       67.67      100.00
+------------+-----------------------------------
+      Total |        300      100.00
+
+. table sex, contents(freq mean sd edadangio )
+variable sd not found
+r(111);
+
+. tabulate tipodolor dxenfcor, row
+
++----------------+
+| Key            |
+|----------------|
+|   frequency    |
+| row percentage |
++----------------+
+
+                  |      diagnostico
+    tipo de dolor |  enfermedad cornaria
+         toracico | diametro   diametro  |     Total
+------------------+----------------------+----------
+    angina tipica |        16          7 |        23 
+                  |     69.57      30.43 |    100.00 
+------------------+----------------------+----------
+   angina atipica |        39          9 |        48 
+                  |     81.25      18.75 |    100.00 
+------------------+----------------------+----------
+dolor no anginoso |        67         18 |        85 
+                  |     78.82      21.18 |    100.00 
+------------------+----------------------+----------
+     asintomatico |        37        102 |       139 
+                  |     26.62      73.38 |    100.00 
+------------------+----------------------+----------
+            Total |       159        136 |       295 
+                  |     53.90      46.10 |    100.00 
+
+
+. tabulate tipodolor dxenfcor
+
+                  |      diagnostico
+    tipo de dolor |  enfermedad cornaria
+         toracico | diametro   diametro  |     Total
+------------------+----------------------+----------
+    angina tipica |        16          7 |        23 
+   angina atipica |        39          9 |        48 
+dolor no anginoso |        67         18 |        85 
+     asintomatico |        37        102 |       139 
+------------------+----------------------+----------
+            Total |       159        136 |       295 
+
+
+. label define dxenfcor 0 "<50%" 1 ">50%", replace
+
+. tabulate tipodolor dxenfcor
+
+                  |      diagnostico
+    tipo de dolor |  enfermedad cornaria
+         toracico |      <50%       >50% |     Total
+------------------+----------------------+----------
+    angina tipica |        16          7 |        23 
+   angina atipica |        39          9 |        48 
+dolor no anginoso |        67         18 |        85 
+     asintomatico |        37        102 |       139 
+------------------+----------------------+----------
+            Total |       159        136 |       295 
+
+
+. tabulate tipodolor dxenfcor [fweight = tipodolor]
+
+                  |      diagnostico
+    tipo de dolor |  enfermedad cornaria
+         toracico |      <50%       >50% |     Total
+------------------+----------------------+----------
+    angina tipica |        16          7 |        23 
+   angina atipica |        78         18 |        96 
+dolor no anginoso |       201         54 |       255 
+     asintomatico |       148        408 |       556 
+------------------+----------------------+----------
+            Total |       443        487 |       930 
+
+
+. tabulate dxenfcor tipodolor [fweight = tipodolor]
+
+diagnostic |
+         o |
+enfermedad |           tipo de dolor toracico
+  cornaria | angina ti  angina at  dolor no   asintomat |     Total
+-----------+--------------------------------------------+----------
+      <50% |        16         78        201        148 |       443 
+      >50% |         7         18         54        408 |       487 
+-----------+--------------------------------------------+----------
+     Total |        23         96        255        556 |       930 
+
+
+. tabulate dxenfcor tipodolor [fweight = tipodolor], row
+
++----------------+
+| Key            |
+|----------------|
+|   frequency    |
+| row percentage |
++----------------+
+
+diagnostic |
+         o |
+enfermedad |           tipo de dolor toracico
+  cornaria | angina ti  angina at  dolor no   asintomat |     Total
+-----------+--------------------------------------------+----------
+      <50% |        16         78        201        148 |       443 
+           |      3.61      17.61      45.37      33.41 |    100.00 
+-----------+--------------------------------------------+----------
+      >50% |         7         18         54        408 |       487 
+           |      1.44       3.70      11.09      83.78 |    100.00 
+-----------+--------------------------------------------+----------
+     Total |        23         96        255        556 |       930 
+           |      2.47      10.32      27.42      59.78 |    100.00 
+
+
+. save "base de datos ejercicio práctico 1.dta"
+
+. log close
+      name:  <unnamed>
+       log:  Ejercicio práctico.smcl
+  log type:  smcl
+ closed on:  13 Aug 2017, 20:48:26
+-------------------------------------------------------------------------------
